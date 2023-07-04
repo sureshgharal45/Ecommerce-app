@@ -1,0 +1,17 @@
+.aligns{
+  display: flex;
+  justify-content: flex-end;
+  .sort-btn {
+    background-color: #adaaaa;
+    padding: 10px;
+    border-radius: 35px;
+    width: 12%;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 500;
+  }
+}
