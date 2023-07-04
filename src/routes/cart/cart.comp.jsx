@@ -29,6 +29,7 @@ const Cart = () => {
           <span>Remove</span>
         </div>
       </div>
+      {/* to fetch cart items individually in cartItem component */}
       {cartItems.map((cartItem) => (
         <CartItem key={cartItem.id} cartItem={cartItem} />
       ))}

@@ -19,6 +19,7 @@ const AddProductForm = () => {
 
   const navigate = useNavigate();
 
+  //function for to add the new product
   const handelAddProduct = () => {
     const newProduct = {
       title,

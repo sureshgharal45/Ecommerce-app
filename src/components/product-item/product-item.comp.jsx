@@ -22,18 +22,22 @@ const ProductItem = ({ product }) => {
   const [newRating, setNewRating] = useState(rating);
   const [newDescription, setNewDescription] = useState(description);
 
+  //To edit new Title
   const handleTitleChange = (e) => {
     setNewTitle(e.target.value);
   };
 
+  //to edit price
   const handlePriceChange = (e) => {
     setNewPrice(e.target.value);
   };
 
+  //to edit ratings
   const handleRatingChange = (e) => {
     setNewRating(e.target.value);
   };
 
+  //to edit description
   const handleDescChange = (e) => {
     setNewDescription(e.target.value);
   };
@@ -42,11 +46,13 @@ const ProductItem = ({ product }) => {
   const cartItems = useSelector(selectCartItems);
   const products = useSelector(selectProductsArray);
 
+  //add product to cart from the home page or main page
   const addProductToCart = () => {
     dispatch(addItemToCart(cartItems, product));
     toast("Product Added to cart!");
   };
 
+  //to save the edited product
   const handleSave = () => {
     const newValues = {
       title: newTitle,
@@ -60,11 +66,13 @@ const ProductItem = ({ product }) => {
     setIsEdit(false);
   };
 
+  //to dleete the product
   const handleDelete = () => {
     dispatch(deleteProduct(products, product));
     toast("Product Deleted!");
   };
 
+  //to show the indidvidual product details
   const handleShowDetails = () => {
     navigate(`/product/${id}`);
   };
@@ -77,7 +85,11 @@ const ProductItem = ({ product }) => {
         <div className="title-rating-price">
           <div className="title-container">
             {isEdit ? (
-              <input value={newTitle} onChange={(e) => handleTitleChange(e)} className="inputBox"/>
+              <input
+                value={newTitle}
+                onChange={(e) => handleTitleChange(e)}
+                className="inputBox"
+              />
             ) : (
               <h3>{title}</h3>
             )}
@@ -161,10 +173,7 @@ const ProductItem = ({ product }) => {
                 />
               </div>
               <div className="action-icon" onClick={addProductToCart}>
-                <img
-                  src="./cart.png"
-                  alt="addToCart"
-                />
+                <img src="./cart.png" alt="addToCart" />
               </div>
             </div>
           )}

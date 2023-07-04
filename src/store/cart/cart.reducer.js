@@ -4,6 +4,7 @@ export const CART_INITIAL_STATE = {
   cartItems: [],
 };
 
+//cart reducer
 export const cartReducer = (state = CART_INITIAL_STATE, action) => {
   const { type, payload } = action;
 

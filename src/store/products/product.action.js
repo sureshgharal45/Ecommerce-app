@@ -28,6 +28,7 @@ export const fetchProductsAsync = () => {
   };
 };
 
+//to sort the rpoducts
 export const sortProduct = (sortedProducts) => {
   const sortedProduct = sortedProducts.data.sort((a, b) => a.price - b.price);
   return createAction(PRODUCTS_ACTION_TYPES.SORT_PRODUCTS_BY_PRICE, {
@@ -35,10 +36,13 @@ export const sortProduct = (sortedProducts) => {
     data: sortedProduct,
   });
 };
+
+//to unsort the products
 export const unsortProduct = (products) => {
   return createAction(PRODUCTS_ACTION_TYPES.UNSORT_PRODUCTS, products);
 };
 
+//to edit the products
 export const saveEditProduct = (products, productToEdit, newValues) => {
   const { title, price, description, rating } = newValues;
   const productIndex = products.data.findIndex(
@@ -65,6 +69,7 @@ export const saveEditProduct = (products, productToEdit, newValues) => {
   });
 };
 
+//to delete the products
 export const deleteProduct = (products, productToDelete) => {
   const newProductsArray = products.data.filter((product) => {
     return product.id !== productToDelete.id;
@@ -79,6 +84,7 @@ export const deleteProduct = (products, productToDelete) => {
   });
 };
 
+//to add the products
 export const addProduct = (products, productToAdd) => {
   products.data.push(productToAdd);
 

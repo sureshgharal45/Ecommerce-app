@@ -16,6 +16,7 @@ const ProductDeatil = () => {
     (product) => Number(id) === product.id
   )[0];
 
+  //function to add product from the product details page
   const addProductToCart = () => {
     dispatch(addItemToCart(cartItems, product));
     toast("Product Added to cart!");

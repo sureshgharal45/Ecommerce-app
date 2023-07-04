@@ -3,6 +3,7 @@ import "./navigation.styles.scss";
 import { Link, Outlet } from "react-router-dom";
 import CartIcon from "../../components/cart-icon/cart-icon.comp";
 
+//navigaton component
 const Navigation = () => {
   return (
     <>

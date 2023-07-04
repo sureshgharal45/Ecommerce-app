@@ -8,6 +8,7 @@ export const PRODUCTS_INITIAL_STATE = {
   error: null,
 };
 
+//product reducer
 export const productsReducer = (
   state = PRODUCTS_INITIAL_STATE,
   action = {}

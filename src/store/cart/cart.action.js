@@ -1,6 +1,7 @@
 import { CART_ACTION_TYPE } from "./cart.type";
 import { createAction } from "../../utils/reducer/reducer.utils";
 
+//add item to cart 
 export const addCartItem = (cartItems, productToAdd) => {
   const existingCartItem = cartItems.find(
     (cartItem) => cartItem.id === productToAdd.id
@@ -17,6 +18,7 @@ export const addCartItem = (cartItems, productToAdd) => {
   return [...cartItems, { ...productToAdd, quantity: 1 }];
 };
 
+//remove item from the cart
 export const removeCartItem = (cartItems, productToRemove) => {
   const newCartItems = cartItems.filter(
     (item) => item.id !== productToRemove.id
@@ -25,6 +27,7 @@ export const removeCartItem = (cartItems, productToRemove) => {
   return newCartItems;
 };
 
+//increment the items 
 export const incItems = (cartItems, productToInc) => {
   return cartItems.map((cartItem) =>
     cartItem.id === productToInc.id
@@ -33,6 +36,7 @@ export const incItems = (cartItems, productToInc) => {
   );
 };
 
+//decrement the items
 export const decItems = (cartItems, productToDec) => {
   const existingCartItem = cartItems.find(
     (cartItem) => cartItem.id === productToDec.id

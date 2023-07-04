@@ -1,5 +1,6 @@
 import { createSelector } from "reselect";
 
+//product selector
 const selectProductsReducer = (state) => state.products;
 
 export const selectProductsArray = createSelector(

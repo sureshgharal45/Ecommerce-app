@@ -1,6 +1,6 @@
 import axios from "axios";
-import { useEffect } from "react";
 
+//function to fetch the products using axios
 export const getProducts = async () => {
   try {
     const prods = await axios(

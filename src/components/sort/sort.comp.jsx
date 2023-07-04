@@ -18,6 +18,7 @@ const Sort = () => {
 
   const dispatch = useDispatch();
 
+  //function to handle sorted and unsoted products
   const handleSort = () => {
     if (!isSorted) {
       dispatch(sortProduct(sortedProds));

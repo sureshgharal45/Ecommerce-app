@@ -9,21 +9,25 @@ import {
 } from "../../store/cart/cart.action";
 import { toast } from "react-toastify";
 
+//component to display the cart items
 function CartItem({ cartItem }) {
   const { brand, images, price, quantity } = cartItem;
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
+  //function to delete the cartItem from the cart
   const handelDelete = () => {
     dispatch(removeItemFromCart(cartItems, cartItem));
     toast("Item Removed!");
   };
 
+  //function to increase the cartItem in the cart
   const handelIncrease = () => {
     dispatch(incQuantity(cartItems, cartItem));
     toast("Item Added!");
   };
 
+  //function to decrease the cartItem in the cart
   const handelDecrease = () => {
     dispatch(decQuantity(cartItems, cartItem));
     toast("Item Removed!");
