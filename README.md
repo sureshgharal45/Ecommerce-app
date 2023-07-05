@@ -114,7 +114,6 @@ Node Package Manager (NPM) React
 
 # Usage (How to start the project)
 To run this project in your device, download the repository and open terminal in your editor and run command… npm start Or you can directly visit https://e-cartstore.netlify.app/allProds
-
 # Project status
 Completed and open for your contributions.
 
