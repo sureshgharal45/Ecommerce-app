@@ -5,10 +5,10 @@ import { selectIsLoading } from "../../store/products/product.selector";
 import { ClipLoader } from "react-spinners";
 import Products from "../products/products.comp";
 
+
 const override = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
+  display: "block",
+  margin: "20% auto",
 };
 
 //home component
@@ -17,7 +17,7 @@ const HomeComponent = () => {
   return (
     <div className="home-container">
       <Sort />
-      {isLoading ? <ClipLoader className={override} /> : <Products />}
+      {isLoading ? <ClipLoader cssOverride={override} /> : <Products />}
     </div>
   );
 };
