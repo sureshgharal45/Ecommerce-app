@@ -11,7 +11,7 @@ const override = {
   margin: "20% auto",
 };
 
-//home component
+//home component - 
 const HomeComponent = () => {
   const isLoading = useSelector(selectIsLoading);
   return (
