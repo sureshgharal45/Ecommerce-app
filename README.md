@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# project: Ecommerce App
+# Folder Structure
+# Main proejct folder
+ 1. gitignore
+ 2. package.json
+ 3. package-lock.json
+ 4. README.md
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Public
+ 1. favicon.io
+ 2. _redirects
+ 3. cart.png
+ 4. shopping-bag.png
+ 5. shopping-cart.png
+ 6. index.html
+ 7. manifest.json
 
-## Available Scripts
+# src
+ 1. App.js
+ 2. App.Styles.scss
+ 3. App.test.js
+ 4. index.js
+ 5. index.css
+ 6. reportWebVitals.js
+ 7. setupTests.js
 
-In the project directory, you can run:
+# Components
+  # add-product-form
+    1. add-product-form.comp.jsx
+    2. add-product-form.styles.scss
+  # button
+    1. button.comp.jsx
+    2. button.styles.scss
+  # cart-icon
+    1. cart-icon.comp.jsx
+    2. cart-icon.styles.scss
+  # cart-items
+    1. cart-items.comp.jsx
+    2. cart-item.styles.scss
+  # home-component
+    1. home.comp.jsx
+    2. hone.styles.scss
+  # product-detail
+    1. product-detail.comp.jsx
+    2. product-detal.styles.scss
+  # product-item
+    1. product-item.comp.jsx
+    2. product-item.styles.scss
+  # products
+    1. product.comp.jsx
+  # sort
+    1. sort.comp.jsx
+    2. sort.styles.scss
 
-### `npm start`
+# routes
+ # addProductForm
+    1. addProd.comp.jsx
+    2. addProd.styles.scss
+ # cart
+    1. cart.comp.jsx
+    2. cart.styles.scss
+ # home
+    1. home.comp.jsx
+ # navigation
+    1. navigation.comp.jsx
+    2. navigation.styles.scss
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# store
+  1. root-reducer
+  2. store
+  # cart
+    1. cart.action.js
+    2. cart.reducer.js
+    3. cart.selector.js
+    4. cart.type.js
+  # products
+    1. product.action.js
+    2. product.reducer.js
+    3. product.selector.js
+    4. product.type.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# utils
+  # fetching
+    1. fetchProducts.js
+  # reducer
+    1. reducer.utils.js
 
-### `npm test`
+# About project
+The basic Ecommerce store where there are several products are rendering by fetching the API. User can add, update, delete the product from the cart also we can sort the product on the basis of price and can add new product as well. User can get the individual product detail by clicking on that particular product.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Technologies used
+HTML5, SASS, JavaScript, ReactJS, Redux, Reselect, react-router-dom
 
-### `npm run build`
+# Features
+1. To add, remove, update the product from the cart.
+2. To get individual details of the product.
+3. Sorting and unsorting of the products on the basis of price.
+4. To add the new product to the list of products.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Project Preview
+List products screen
+<img width="939" alt="ListProducts" src="https://github.com/sureshgharal45/ecommerce-app/assets/79570808/1207ea10-ed7c-40ca-9a45-842b072bb5de">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+CartItems screen
+<img width="950" alt="cartItemScreen" src="https://github.com/sureshgharal45/ecommerce-app/assets/79570808/65420201-2833-4373-9816-b02bbb81d44b">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Add product screen
+<img width="960" alt="addProuctScreen" src="https://github.com/sureshgharal45/ecommerce-app/assets/79570808/f682666a-7fe2-4550-a6fc-58b1037bde80">
 
-### `npm run eject`
+# Setup
+Followig are the requirements to run this project:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Node Package Manager (NPM) React
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Usage (How to start the project)
+To run this project in your device, download the repository and open terminal in your editor and run command… npm start Or you can directly visit https://e-cartstore.netlify.app/allProds
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Project status
+Completed and open for your contributions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
